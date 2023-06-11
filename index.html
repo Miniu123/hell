@@ -13,6 +13,23 @@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+    <style>
+      .hidden-button {
+        opacity: 0;
+        width: 140px;
+        height: 45px;
+      }
+    </style>
+    <script>
+      function skopiujZawartosc() {
+        var linl = "Zawartość zmiennej do skopiowania";
+        navigator.clipboard.writeText(linl).then(function () {
+          alert("Zawartość została skopiowana do schowka.");
+        });
+      }
+    </script>
+	
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8352552118031242"
      crossorigin="anonymous"></script>
 	
@@ -93,18 +110,6 @@
                   <div class="u-container-layout u-container-layout-3">
                     <a href="files/we.txt" class="u-btn u-btn-round u-button-style u-file-link u-hover-palette-2-light-1 u-palette-2-base u-radius-50 u-btn-1">Kopiuj ip</a>
                     <div class="u-clearfix u-custom-html u-custom-html-3">
-                    <title></title>
-                    <style> .hidden-button {
-        opacity: 0;
-        width: 140px;
-        height: 45px;
-      } </style>
-                      <script> function skopiujZawartosc() {
-        var linl = "HellCraft.pl";
-        navigator.clipboard.writeText(linl).then(function () {
-          alert("Zawartość została skopiowana do schowka. Wklej IP w Minecraft w pole 'Adres serwera' przy pomocy CTRL + V");
-        });
-      } </script>
                       <button class="hidden-button" onclick="skopiujZawartosc()"></button>
                     </div>
                     <p class="u-custom-font u-font-oswald u-text u-text-default u-text-2">HellCraft.pl<span class="u-text-body-color"></span>
